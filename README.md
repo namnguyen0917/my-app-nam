@@ -35,6 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+# Project Structure Overview
+```
 Demo_Structure
 ├─ src/
 │  ├─ app/                         # App Router (route-level)
@@ -46,7 +48,7 @@ Demo_Structure
 │  │  └─ (dashboard)/             # Group routes cần auth (middleware protect)
 │  │     ├─ layout.tsx            # Layout riêng cho dashboard
 │  │     └─ page.tsx
-│  ├─ features/                   # TÁCH THEO CHỨC NĂNG (Redux + UI + service)
+│  ├─ features/                   # TÁCH THEO CHỨC NĂNG (Redux + UI + service)
 │  │  ├─ auth/
 │  │  │  ├─ components/
 │  │  │  │  ├─ LoginForm.tsx
@@ -86,3 +88,4 @@ Demo_Structure
 ├─ .env.local
 ├─ tsconfig.json                  # alias path: @features/*, @shared/*
 └─ next.config.mjs
+```
