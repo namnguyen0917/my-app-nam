@@ -22,8 +22,10 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["src/assets/*"],
-      "@lib/*": ["src/libs/i18n/*"],
-    }
+      "@libs/*": ["src/libs/i18n/*"],
+      "@features/*": ["src/features/*"],
+    },
+    "forceConsistentCasingInFileNames": true,
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
