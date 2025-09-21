@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { defaultLocale, Locale  } from '@/libs/i18n';
-import en from '../language/en.json';
-import nl from '../language/nl.json';
+import en from '../languages/en.json';
+import nl from '../languages/vi.json';
 
 type TranslateState = {
   locale: Locale;
