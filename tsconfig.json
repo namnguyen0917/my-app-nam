@@ -24,6 +24,7 @@
       "@assets/*": ["src/assets/*"],
       "@libs/*": ["src/libs/i18n/*"],
       "@features/*": ["src/features/*"],
+      "@public/*": ["src/features/*"],
     },
     "forceConsistentCasingInFileNames": true,
   },
