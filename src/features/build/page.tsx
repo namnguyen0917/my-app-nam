@@ -1,5 +1,5 @@
 'use client';
-import Sidebar from "@features/shared/components/Sidebar";
+import Sidebar from "@/features/shared/components/main/Sidebar";
 
 export default function Page() {
   
