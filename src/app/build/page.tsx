@@ -2,7 +2,7 @@
 
 import Page from "@/features/build/page";
 
-export default function Home() {
+export default function Build() {
   
   return(
     <Page />

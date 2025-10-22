@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { menuData } from "@/mocks/shared/data";
+
 export default function Header() {
   
     return (
@@ -15,11 +18,11 @@ export default function Header() {
                     </div>
                     {/* Desktop Menu */}
                     <nav className="hidden md:flex gap-6 text-sm">
-                        <a href="#overview" className="hover:underline">Tổng Quan</a>
-                        <a href="#builds" className="hover:underline">Builds</a>
-                        <a href="#classes" className="hover:underline">Trang Bị</a>
-                        <a href="#quests" className="hover:underline">Nhiệm Vụ</a>
-                        <a href="#maps" className="hover:underline">Bản Đồ</a>
+                       {menuData.map((item) => (
+                            <Link key={item.path} href={item.path} className="hover:underline">
+                                {item.label}
+                            </Link>
+                        ))}
                     </nav>
 
                     {/* Desktop Buttons */}
@@ -35,11 +38,11 @@ export default function Header() {
                 <div id="mobile-menu" className="md:hidden hidden flex-col gap-4 mt-4 px-6 text-sm">
                     {/* Links */}
                     <div className="flex flex-wrap gap-3">
-                        <a href="#overview" className="block py-2 px-3 rounded-md hover:bg-amber-400/10">Tổng Quan</a>
-                        <a href="#classes" className="block py-2 px-3 rounded-md hover:bg-amber-400/10">Trang Bị</a>
-                        <a href="#builds" className="block py-2 px-3 rounded-md hover:bg-amber-400/10">Builds</a>
-                        <a href="#quests" className="block py-2 px-3 rounded-md hover:bg-amber-400/10">Nhiệm Vụ</a>
-                        <a href="#maps" className="block py-2 px-3 rounded-md hover:bg-amber-400/10">Bản Đồ</a>
+                        {menuData.map((item) => (
+                            <Link key={item.path} href={item.path} className="block py-2 px-3 rounded-md hover:bg-amber-400/10">
+                                {item.label}
+                            </Link>
+                        ))}
                     </div>
                     {/* Buttons */}
                     <div className="flex gap-3 mt-3">
