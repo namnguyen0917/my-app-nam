@@ -1,6 +1,6 @@
 'use client';
 
-import Page from "@/features/build/page";
+import Page from "@/features/build/components/page";
 
 export default function Build() {
   
