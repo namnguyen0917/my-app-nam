@@ -7,6 +7,6 @@ export const menuData:MenuItemType[] =
         { path:"class", label:"Trang Bị" },
         { path:"quest", label:"Nhiệm Vụ" },
         { path:"map", label:"Bản Đồ" },
-        { path:"GM", label:"GMaster" },
+        { path:"GameMaster", label:"GameMaster" },
     ]
 

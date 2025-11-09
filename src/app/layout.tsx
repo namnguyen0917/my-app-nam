@@ -4,6 +4,7 @@ import { Header, Footer, Head } from "@/features/shared/components";
 import { useTranslateStore } from '@/store/useTranslateStore';
 import { Sidebar } from "@/features/shared/components/";
 import useHideSidebar from "@/features/shared/hooks/useHideSidebar";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function RootLayout({
   children,
