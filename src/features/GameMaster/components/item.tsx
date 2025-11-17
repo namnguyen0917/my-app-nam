@@ -1,0 +1,42 @@
+"use client";
+import { CategoryItemType } from "@/mocks/GameMaster"; 
+import GemIcon from "@/features/shared/components/page/GemIcon";
+import { getConfigImageAndIndex } from "@/libs/utils"; 
+
+interface Props {
+  data?: CategoryItemType[];
+  title?: string;
+  coppyId?: number;
+  type: string;
+  handleCopy: (code: string, id: number) => Promise<void>;
+}
+
+export default function Item({ data, title, handleCopy, coppyId, type }:Props) {
+
+  if (!data) return null;
+  
+  const formatCode = (id:number) => (`!!createitem = ` + id + ` = 2 = 1`);
+
+  return (
+    <div className="p-4 text-gray-100 text-sm leading-relaxed space-y-3 bg-gray-900/30">
+        {data.map((item:CategoryItemType) => {
+            const itemId = item.id;
+            const code = formatCode(itemId);
+            const checkCoppyId = (coppyId === itemId);
+            const image = getConfigImageAndIndex(type ,item.level);
+            return(
+                <span key={item.id} className="flex gap-8 items-center hover:bg-slate-950/20" >
+                    <GemIcon nameImages={image.img} index={image.index} />
+                    <b> {itemId} </b>
+                    <b> { title + ` (Cấp ${item.level})` } </b>
+                    <b onClick={() => (checkCoppyId ? {} : handleCopy(code, itemId))} className="cursor-pointer"> {code} </b>
+                    <i className="fa-solid fa-copy cursor-pointer" onClick={() => (checkCoppyId ? {} : handleCopy(code, itemId))}></i>
+                    <i className={checkCoppyId ? "text-green-300" : ""}>
+                      {checkCoppyId ? "Copied !!!" : "Coppy"} 
+                    </i>
+                </span>
+            )
+        })}
+    </div>
+  );
+}

@@ -22,7 +22,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["src/assets/*"],
-      "@libs/*": ["src/libs/i18n/*"],
+      "@libs/*": ["src/libs/*"],
       "@features/*": ["src/features/*"],
       "@shared/*": ["src/features/shared/*"],
       "@mocks/*": ["src/mocks/*"],

@@ -1,4 +1,4 @@
-export type GmTabKey = "event" | "item" | "gem";
+export type GmTabKey = "gem" | "gemListTrac" | "gemListTinhHoa" | "petListSkill";
 
 export type GmTabType = {
   key: GmTabKey;
@@ -8,7 +8,9 @@ export type GmTabType = {
 
 export interface CategoryItemType {
   id: number;
-  level: number;
+  level?: number;
+  label?: string;
+  startIndex?: number;
 }
 
 export interface CategoryType {
