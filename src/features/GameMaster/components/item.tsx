@@ -1,7 +1,7 @@
 "use client";
 import { CategoryItemType } from "@/mocks/GameMaster"; 
 import GemIcon from "@/features/shared/components/page/GemIcon";
-import { getConfigImageAndIndex } from "@/libs/utils"; 
+import { getConfigImage } from "@/libs/utils"; 
 
 interface Props {
   data?: CategoryItemType[];
@@ -23,10 +23,10 @@ export default function Item({ data, title, handleCopy, coppyId, type }:Props) {
             const itemId = item.id;
             const code = formatCode(itemId);
             const checkCoppyId = (coppyId === itemId);
-            const image = getConfigImageAndIndex(type ,item.level);
+            const image = getConfigImage(type ,item.level);
             return(
                 <span key={item.id} className="flex gap-8 items-center hover:bg-slate-950/20" >
-                    <GemIcon nameImages={image.img} index={image.index} />
+                    <GemIcon nameImages={image.nameImg} index={item.startIndex} />
                     <b> {itemId} </b>
                     <b> { title + ` (Cấp ${item.level})` } </b>
                     <b onClick={() => (checkCoppyId ? {} : handleCopy(code, itemId))} className="cursor-pointer"> {code} </b>
