@@ -1,24 +1,29 @@
-import Image from "next/image";
-
 interface GemIconProps {
-  index: number; // 0–15 tương ứng vị trí trong sprite 4x4
+  index?: number; // 0–15 tương ứng vị trí trong sprite 4x4
   size?: number; // kích thước hiển thị (px)
-  src?: string;  // đường dẫn ảnh sprite
+  nameImages?: string;  // Tên ảnh
+  nameFolder?: string;  // Tên folder chứa ảnh
+  spriteSize?: number;  // kích thước tổng thể ảnh (width & height)
+  cols?: number; // số cột trong sprite
 }
 
 export default function GemIcon({
-  index,
-  size = 64,
-  src = "/assets/icons/Gem1_1.jpg",
+  index = 0,
+  size = 52,
+  spriteSize = 200,
+  nameImages ="Gemjiankang",
+  nameFolder = "icons",
+  cols = 4
 }: GemIconProps) {
-  const cols = 4; // số cột trong sprite
-  const rows = 4;
-  const spriteSize = 260; // kích thước tổng thể ảnh (width & height)
+  
   const cellSize = spriteSize / cols; // kích thước mỗi viên
-
+  
   // Tính vị trí x,y
   const x = (index % cols) * cellSize;
   const y = Math.floor(index / cols) * cellSize;
+
+  //đường dẫn img
+  const src = "/assets/"+ nameFolder +"/"+ nameImages +".jpg";
 
   return (
     <div

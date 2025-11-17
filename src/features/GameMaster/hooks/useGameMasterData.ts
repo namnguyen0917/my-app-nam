@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from "react";
-import { gemList } from "@/mocks/GameMaster/gemList";
+import { GEM_LIST_BASIC } from "@/mocks/GameMaster/gemList";
 import { gmDefaultTab, GmTabKey, CategoryType }  from "@/mocks/GameMaster/";
 
 
@@ -10,7 +10,7 @@ export default function useGameMasterData() {
   const [activeTab, setActiveTab] = useState(gmDefaultTab);
   const [openTabs, setOpenTabs] = useState<string[]>([]);
   const [coppyId, setCoppyId] = useState<number>(1);
-  const [data, setData] = useState<CategoryType[]>(gemList);
+  const [data, setData] = useState<CategoryType[]>(GEM_LIST_BASIC);
   
   // Toggle Open/close tab
   const toggleTab = (tab: string) => {
@@ -27,20 +27,23 @@ export default function useGameMasterData() {
   const loadData = useCallback(async (tab: GmTabKey) => {
     switch (tab) {
       case "gem":
-        const { gemList } = await import("@/mocks/GameMaster/gemList");
-        setData(gemList);
+        const { GEM_LIST_BASIC } = await import("@/mocks/GameMaster/gemList");
+        setData(GEM_LIST_BASIC);
           break;
 
-      case "item":
-        const { itemList } = await import("@/mocks/GameMaster/itemList");
-        setData(itemList);
+      case "gemListTinhHoa":
+        const { GEM_LIST_TINH_HOA } = await import("@/mocks/GameMaster/gemListTinhHoa");
+        setData(GEM_LIST_TINH_HOA);
+          break;
+      
+      case "petListSkill":
+        const { PET_LIST_SKILL } = await import("@/mocks/GameMaster/petListSkill");
+        setData(PET_LIST_SKILL);
           break;
 
       default:
-        const { eventList } = await import("@/mocks/GameMaster/eventList");
-
-        
-        setData(eventList);
+        const { GEM_LIST_TRAC } = await import("@/mocks/GameMaster/gemListTrac");
+        setData(GEM_LIST_TRAC);
     }
 }, []);
   

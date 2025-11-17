@@ -4,7 +4,7 @@ import { Section } from "@features/shared/components";
 import useGameMasterData from "../hooks/useGameMasterData";
 import { gmListTabs, GmTabType } from "@/mocks/GameMaster";
 import ListItem from './ListItem';
-import { TEXT_COLOR, BG_COLOR, BG_HOVER_COLOR, BORDER_COLOR } from "@/libs/constants";
+import { TEXT_COLOR, BG_COLOR, BG_HOVER_COLOR, BORDER_COLOR } from "@/libs/constants/";
 
 export default function Page() {
  
@@ -38,17 +38,17 @@ export default function Page() {
         {/* Toggle */}
         {data.map((tab:CategoryType) => { 
 
-          const isOpen = !openTabs.includes(tab.id);
+          const isOpen = openTabs.includes(tab.id);
           const textColor = TEXT_COLOR[tab.color as keyof typeof TEXT_COLOR] || 'text-white';
           const bgColor = BG_COLOR[tab.color as keyof typeof BG_COLOR] || 'bg-amber-400';
           const bgHoverColor = BG_HOVER_COLOR[tab.color as keyof typeof BG_HOVER_COLOR] || 'hover:bg-amber-400/20';
           const borderColor = BORDER_COLOR[tab.color as keyof typeof BORDER_COLOR] || 'border-amber-400/30 bg-amber-100/30';
-
+          
           return(
             <div className={`border ${borderColor} rounded-xl overflow-hidden mb-[16px]`}  key={tab.id}>
               <button
                 onClick={() => toggleTab(tab.id)} 
-                className={`w-full flex items-center justify-between px-4 py-3 text-left ${textColor} text-lime-500 font-semibold ${bgColor} ${bgHoverColor} transition`}
+                className={`w-full flex items-center justify-between px-4 py-3 text-left ${textColor} text-lime-500 font-semibold ${bgColor} ${bgHoverColor} transition cursor-pointer`}
               >
                 <span>{tab.name}</span>
                 <span className={`text-xl ${isOpen ? "text-amber-200" : "text-amber-400"}`}>
@@ -56,8 +56,8 @@ export default function Page() {
                 </span>
               </button>
 
-               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${ isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0" }`}>
-                  <ListItem data={tab.items} title={tab.title} handleCopy={handleCopy} coppyId={coppyId} />
+               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${ isOpen ? "max-h-[3200px] opacity-100" : "max-h-0 opacity-0" }`}>
+                <ListItem data={tab.items} title={tab.title} handleCopy={handleCopy} coppyId={coppyId} type={tab.id} />
                </div>
 
              </div>
