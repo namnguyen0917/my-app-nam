@@ -15,21 +15,37 @@ type ColorType =
   | 'AMBER';
 
 export const TEXT_COLOR: Record<ColorType, string> = {
-  YELLOW: 'text-yellow-100',
-  BLUE: 'text-sky-300',
-  RED: 'text-red-400',
-  GREEN: 'text-lime-500',
-  PURPLE: 'text-purple-300',
-  ORANGE: 'text-orange-300',
-  PINK: 'text-pink-300',
-  GRAY: 'text-gray-300',
+  // YELLOW: 'text-yellow-100',
+  // BLUE: 'text-sky-300',
+  // RED: 'text-red-400',
+  // GREEN: 'text-lime-500',
+  // PURPLE: 'text-purple-300',
+  // ORANGE: 'text-orange-300',
+  // PINK: 'text-pink-300',
+  // GRAY: 'text-gray-300',
 
-  BROWN: 'text-amber-800',
-  CYAN: 'text-cyan-300',
-  TEAL: 'text-teal-300',
-  INDIGO: 'text-indigo-300',
-  ROSE: 'text-rose-300',
-  AMBER: 'text-amber-300',
+  // BROWN: 'text-amber-800',
+  // CYAN: 'text-cyan-300',
+  // TEAL: 'text-teal-300',
+  // INDIGO: 'text-indigo-300',
+  // ROSE: 'text-rose-300',
+  // AMBER: 'text-amber-300',
+
+  YELLOW: 'text-white',
+  BLUE: 'text-white',
+  RED: 'text-white',
+  GREEN: 'text-white',
+  PURPLE: 'text-white',
+  ORANGE: 'text-white',
+  PINK: 'text-white',
+  GRAY: 'text-white',
+
+  BROWN: 'text-white',
+  CYAN: 'text-white',
+  TEAL: 'text-white',
+  INDIGO: 'text-white',
+  ROSE: 'text-white',
+  AMBER: 'text-white',
 };
 
 export const BG_COLOR: Record<ColorType, string> = {
