@@ -1,4 +1,4 @@
-export type GmTabKey = "gem" | "gemListTrac" | "gemListTinhHoa" | "petListSkill";
+export type GmTabKey = "gem" | "gemListTrac" | "gemListTinhHoa" | "petListSkill" | "humanListSkill";
 
 export type GmTabType = {
   key: GmTabKey;
@@ -11,12 +11,14 @@ export interface CategoryItemType {
   level?: number;
   label?: string;
   startIndex?: number;
+  faction?: string;
+  img?: string;
 }
 
 export interface CategoryType {
   id: string;
   name: string;
-  title: string;
+  title?: string;
   color: string;
   items?: CategoryItemType[];
 }
