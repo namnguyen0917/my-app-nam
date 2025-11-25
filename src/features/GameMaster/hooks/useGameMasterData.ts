@@ -41,6 +41,11 @@ export default function useGameMasterData() {
         setData(PET_LIST_SKILL);
           break;
 
+      case "humanListSkill":
+        const { HUMAN_LIST_SKILL } = await import("@/mocks/GameMaster/humanListSkill");
+        setData( HUMAN_LIST_SKILL );
+          break;
+
       default:
         const { GEM_LIST_TRAC } = await import("@/mocks/GameMaster/gemListTrac");
         setData(GEM_LIST_TRAC);

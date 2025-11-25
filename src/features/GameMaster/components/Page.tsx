@@ -56,7 +56,7 @@ export default function Page() {
                 </span>
               </button>
 
-               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${ isOpen ? "max-h-[3200px] opacity-100" : "max-h-0 opacity-0" }`}>
+               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${ isOpen ? "max-h-[3500px] opacity-100" : "max-h-0 opacity-0" }`}>
                 <ListItem data={tab.items} title={tab.title} handleCopy={handleCopy} coppyId={coppyId} type={tab.id} />
                </div>
 
