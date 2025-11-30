@@ -5,7 +5,12 @@ interface GemIconProps {
   nameFolder?: string;  // Tên folder chứa ảnh
   spriteSize?: number;  // kích thước tổng thể ảnh (width & height)
   cols?: number; // số cột trong sprite
-  isSplit?: boolean;
+}
+
+function getImg(code: string) {
+  const parts = code.split("_");
+  parts.pop(); // loại bỏ phần cuối
+  return parts.join("_");
 }
 
 export default function GemIcon({
@@ -15,7 +20,6 @@ export default function GemIcon({
   nameImages ="FightSkillShaoLin1",
   nameFolder = "icons",
   cols = 4,
-  isSplit = true
 }: GemIconProps) {
   
   const cellSize = spriteSize / cols; // kích thước mỗi viên
@@ -23,7 +27,7 @@ export default function GemIcon({
   // Tính vị trí x,y
   const x = (index % cols) * cellSize;
   const y = Math.floor(index / cols) * cellSize;
-  const img = isSplit ? nameImages.split("_")[0] : nameImages;
+  const img = getImg(nameImages);
 
   //đường dẫn img
   const src = "/assets/"+ nameFolder +"/"+ img +".jpg";

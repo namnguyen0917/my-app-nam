@@ -24,15 +24,18 @@ export const GEM_LIST_TRAC:CategoryType[] = [
     title: "Thuần Tịnh Lam Tinh Thạch",
     color: "BLUE",
     items: [
-      { id: 50102006, level: 1, startIndex: 8 },
-      { id: 50202006, level: 2, startIndex: 8 },
-      { id: 50302006, level: 3, startIndex: 8 },
-      { id: 50402006, level: 4, startIndex: 8 },
-      { id: 50502006, level: 5, startIndex: 8 },
-      { id: 50602006, level: 6, startIndex: 8 },
-      { id: 50702006, level: 7, startIndex: 8 },
-      { id: 50802006, level: 8, startIndex: 8 },
-      { id: 50902006, level: 9, startIndex: 8 },
+        { id: 50102006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 1)", img: "Gem1_2_9", startIndex: 8 },
+        { id: 50202006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 2)", img: "Gem1_2_9", startIndex: 8 },
+
+        { id: 50302006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 3)", img: "Gem3_2_9", startIndex: 8 },
+        { id: 50402006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 4)", img: "Gem3_2_9", startIndex: 8 },
+        { id: 50502006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 5)", img: "Gem3_2_9", startIndex: 8 },
+
+        { id: 50602006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 6)", img: "Gem6_2_9", startIndex: 8 },
+        { id: 50702006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 7)", img: "Gem6_2_9", startIndex: 8 },
+        { id: 50802006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 8)", img: "Gem6_2_9", startIndex: 8 },
+
+        { id: 50902006, label: "Thuần Tịnh Lam Tinh Thạch (Cấp 9)", img: "Gem9_2_9", startIndex: 8 }
     ],
   },
   {
@@ -41,15 +44,18 @@ export const GEM_LIST_TRAC:CategoryType[] = [
     title: "Thuần Tịnh Hồng Tinh Thạch",
     color: "RED",
     items: [
-      { id: 50102007, level: 1, startIndex: 12 },
-      { id: 50202007, level: 2, startIndex: 12 },
-      { id: 50302007, level: 3, startIndex: 12 },
-      { id: 50402007, level: 4, startIndex: 12 },
-      { id: 50502007, level: 5, startIndex: 12 },
-      { id: 50602007, level: 6, startIndex: 12 },
-      { id: 50702007, level: 7, startIndex: 12 },
-      { id: 50802007, level: 8, startIndex: 12 },
-      { id: 50902007, level: 9, startIndex: 12 },
+      { id: 50102007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 1)", img: "Gem1_2_13", startIndex: 12 },
+        { id: 50202007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 2)", img: "Gem1_2_13", startIndex: 12 },
+
+        { id: 50302007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 3)", img: "Gem3_2_13", startIndex: 12 },
+        { id: 50402007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 4)", img: "Gem3_2_13", startIndex: 12 },
+        { id: 50502007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 5)", img: "Gem3_2_13", startIndex: 12 },
+
+        { id: 50602007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 6)", img: "Gem6_2_13", startIndex: 12 },
+        { id: 50702007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 7)", img: "Gem6_2_13", startIndex: 12 },
+        { id: 50802007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 8)", img: "Gem6_2_13", startIndex: 12 },
+
+        { id: 50902007, label: "Thuần Tịnh Hồng Tinh Thạch (Cấp 9)", img: "Gem9_2_13", startIndex: 12 }
     ],
   },
   {
@@ -58,15 +64,18 @@ export const GEM_LIST_TRAC:CategoryType[] = [
     title: "Thuần Tịnh Lục Tinh Thạch",
     color: "GREEN",
     items: [
-      { id: 50102008, level: 1, startIndex: 5 },
-      { id: 50202008, level: 2, startIndex: 5 },
-      { id: 50302008, level: 3, startIndex: 5 },
-      { id: 50402008, level: 4, startIndex: 5 },
-      { id: 50502008, level: 5, startIndex: 5 },
-      { id: 50602008, level: 6, startIndex: 5 },
-      { id: 50702008, level: 7, startIndex: 5 },
-      { id: 50802008, level: 8, startIndex: 5 },
-      { id: 50902008, level: 9, startIndex: 5 },
+       { id: 50102008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 1)", img: "Gem1_2_6", startIndex: 5 },
+        { id: 50202008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 2)", img: "Gem1_2_6", startIndex: 5 },
+
+        { id: 50302008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 3)", img: "Gem3_2_6", startIndex: 5 },
+        { id: 50402008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 4)", img: "Gem3_2_6", startIndex: 5 },
+        { id: 50502008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 5)", img: "Gem3_2_6", startIndex: 5 },
+
+        { id: 50602008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 6)", img: "Gem6_2_6", startIndex: 5 },
+        { id: 50702008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 7)", img: "Gem6_2_6", startIndex: 5 },
+        { id: 50802008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 8)", img: "Gem6_2_6", startIndex: 5 },
+
+        { id: 50902008, label: "Thuần Tịnh Lục Tinh Thạch (Cấp 9)", img: "Gem9_2_6", startIndex: 5 }
     ],
   },
   {
@@ -92,15 +101,18 @@ export const GEM_LIST_TRAC:CategoryType[] = [
     title: "Thuần Tịnh Hạo Thạch",
     color: "BLUE",
     items: [
-      { id: 50112006, level: 1, startIndex: 13 },
-      { id: 50212006, level: 2, startIndex: 13 },
-      { id: 50312006, level: 3, startIndex: 13 },
-      { id: 50412006, level: 4, startIndex: 13 },
-      { id: 50512006, level: 5, startIndex: 13 },
-      { id: 50612006, level: 6, startIndex: 13 },
-      { id: 50712006, level: 7, startIndex: 13 },
-      { id: 50812006, level: 8, startIndex: 13 },
-      { id: 50912006, level: 9, startIndex: 13 },
+      { id: 50112006, label: "Thuần Tịnh Hạo Thạch (Cấp 1)", img: "Gem1_2_14", startIndex: 13 },
+        { id: 50212006, label: "Thuần Tịnh Hạo Thạch (Cấp 2)", img: "Gem1_2_14", startIndex: 13 },
+
+        { id: 50312006, label: "Thuần Tịnh Hạo Thạch (Cấp 3)", img: "Gem3_2_14", startIndex: 13 },
+        { id: 50412006, label: "Thuần Tịnh Hạo Thạch (Cấp 4)", img: "Gem3_2_14", startIndex: 13 },
+        { id: 50512006, label: "Thuần Tịnh Hạo Thạch (Cấp 5)", img: "Gem3_2_14", startIndex: 13 },
+
+        { id: 50612006, label: "Thuần Tịnh Hạo Thạch (Cấp 6)", img: "Gem6_2_14", startIndex: 13 },
+        { id: 50712006, label: "Thuần Tịnh Hạo Thạch (Cấp 7)", img: "Gem6_2_14", startIndex: 13 },
+        { id: 50812006, label: "Thuần Tịnh Hạo Thạch (Cấp 8)", img: "Gem6_2_14", startIndex: 13 },
+
+        { id: 50912006, label: "Thuần Tịnh Hạo Thạch (Cấp 9)", img: "Gem9_2_14", startIndex: 13 }
     ],
   },
   {
@@ -126,15 +138,15 @@ export const GEM_LIST_TRAC:CategoryType[] = [
     title: "Thuần Tịnh Bích Tỷ",
     color: "GREEN",
     items: [
-      { id: 50112008, level: 1, startIndex: 14 },
-      { id: 50212008, level: 2, startIndex: 14 },
-      { id: 50312008, level: 3, startIndex: 14 },
-      { id: 50412008, level: 4, startIndex: 14 },
-      { id: 50512008, level: 5, startIndex: 14 },
-      { id: 50612008, level: 6, startIndex: 14 },
-      { id: 50712008, level: 7, startIndex: 14 },
-      { id: 50812008, level: 8, startIndex: 14 },
-      { id: 50912008, level: 9, startIndex: 14 },
+      { id: 50112008, label: "Thuần Tịnh Bích Tỷ (Cấp 1)", img: "Gem1_2_15", startIndex: 14 },
+        { id: 50212008, label: "Thuần Tịnh Bích Tỷ (Cấp 2)", img: "Gem1_2_15", startIndex: 14 },
+        { id: 50312008, label: "Thuần Tịnh Bích Tỷ (Cấp 3)", img: "Gem3_2_15", startIndex: 14 },
+        { id: 50412008, label: "Thuần Tịnh Bích Tỷ (Cấp 4)", img: "Gem3_2_15", startIndex: 14 },
+        { id: 50512008, label: "Thuần Tịnh Bích Tỷ (Cấp 5)", img: "Gem3_2_15", startIndex: 14 },
+        { id: 50612008, label: "Thuần Tịnh Bích Tỷ (Cấp 6)", img: "Gem6_2_15", startIndex: 14 },
+        { id: 50712008, label: "Thuần Tịnh Bích Tỷ (Cấp 7)", img: "Gem6_2_15", startIndex: 14 },
+        { id: 50812008, label: "Thuần Tịnh Bích Tỷ (Cấp 8)", img: "Gem6_2_15", startIndex: 14 },
+        { id: 50912008, label: "Thuần Tịnh Bích Tỷ (Cấp 9)", img: "Gem9_2_15", startIndex: 14 }
     ],
   },
 
