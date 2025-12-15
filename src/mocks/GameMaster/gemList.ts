@@ -67,7 +67,7 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     title: "Lục Tinh Thạch",
     color: "GREEN",
     items: [
-     { id: 50102004, label: "Lục Tinh Thạch (Cấp 1)", img: "Gem1_1_6", startIndex: 5 },
+        { id: 50102004, label: "Lục Tinh Thạch (Cấp 1)", img: "Gem1_1_6", startIndex: 5 },
         { id: 50202004, label: "Lục Tinh Thạch (Cấp 2)", img: "Gem1_1_6", startIndex: 5 },
 
         { id: 50302004, label: "Lục Tinh Thạch (Cấp 3)", img: "Gem3_1_6", startIndex: 5 },
@@ -88,17 +88,14 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     color: "YELLOW",
     items: [
       { id: 50112001, label: "Hoàng Ngọc (Cấp 1)", img: "Gem1_1_11", startIndex: 10 },
-        { id: 50212001, label: "Hoàng Ngọc (Cấp 2)", img: "Gem1_1_11", startIndex: 10 },
-
-        { id: 50312001, label: "Hoàng Ngọc (Cấp 3)", img: "Gem3_1_11", startIndex: 10 },
-        { id: 50412001, label: "Hoàng Ngọc (Cấp 4)", img: "Gem3_1_11", startIndex: 10 },
-        { id: 50512001, label: "Hoàng Ngọc (Cấp 5)", img: "Gem3_1_11", startIndex: 10 },
-
-        { id: 50612001, label: "Hoàng Ngọc (Cấp 6)", img: "Gem6_1_11", startIndex: 10 },
-        { id: 50712001, label: "Hoàng Ngọc (Cấp 7)", img: "Gem6_1_11", startIndex: 10 },
-        { id: 50812001, label: "Hoàng Ngọc (Cấp 8)", img: "Gem6_1_11", startIndex: 10 },
-
-        { id: 50912001, label: "Hoàng Ngọc (Cấp 9)", img: "Gem9_1_11", startIndex: 10 }
+      { id: 50212001, label: "Hoàng Ngọc (Cấp 2)", img: "Gem1_1_11", startIndex: 10 },
+      { id: 50312001, label: "Hoàng Ngọc (Cấp 3)", img: "Gem3_1_11", startIndex: 10 },
+      { id: 50412001, label: "Hoàng Ngọc (Cấp 4)", img: "Gem3_1_11", startIndex: 10 },
+      { id: 50512001, label: "Hoàng Ngọc (Cấp 5)", img: "Gem3_1_11", startIndex: 10 },
+      { id: 50612001, label: "Hoàng Ngọc (Cấp 6)", img: "Gem6_1_11", startIndex: 10 },
+      { id: 50712001, label: "Hoàng Ngọc (Cấp 7)", img: "Gem6_1_11", startIndex: 10 },
+      { id: 50812001, label: "Hoàng Ngọc (Cấp 8)", img: "Gem6_1_11", startIndex: 10 },
+      { id: 50912001, label: "Hoàng Ngọc (Cấp 9)", img: "Gem9_1_11", startIndex: 10 }
     ],
   },
   {
@@ -107,15 +104,15 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     title: "Hạo Thạch",
     color: "BLUE",
     items: [
-      { id: 50112002, level: 1, startIndex: 9 },
-      { id: 50212002, level: 2, startIndex: 9 },
-      { id: 50312002, level: 3, startIndex: 9 },
-      { id: 50412002, level: 4, startIndex: 9 },
-      { id: 50512002, level: 5, startIndex: 9 },
-      { id: 50612002, level: 6, startIndex: 9 },
-      { id: 50712002, level: 7, startIndex: 9 },
-      { id: 50812002, level: 8, startIndex: 9 },
-      { id: 50912002, level: 9, startIndex: 9 },
+      { id: 50112002, label: "Hạo Thạch (Cấp 1)", img: "Gem1_1_10", startIndex: 9 },
+      { id: 50212002, label: "Hạo Thạch (Cấp 2)", img: "Gem1_1_10", startIndex: 9 },
+      { id: 50312002, label: "Hạo Thạch (Cấp 3)", img: "Gem3_1_10", startIndex: 9 },
+      { id: 50412002, label: "Hạo Thạch (Cấp 4)", img: "Gem3_1_10", startIndex: 9 },
+      { id: 50512002, label: "Hạo Thạch (Cấp 5)", img: "Gem3_1_10", startIndex: 9 },
+      { id: 50612002, label: "Hạo Thạch (Cấp 6)", img: "Gem6_1_10", startIndex: 9 },
+      { id: 50712002, label: "Hạo Thạch (Cấp 7)", img: "Gem6_1_10", startIndex: 9 },
+      { id: 50812002, label: "Hạo Thạch (Cấp 8)", img: "Gem6_1_10", startIndex: 9 },
+      { id: 50912002, label: "Hạo Thạch (Cấp 9)", img: "Gem9_1_10", startIndex: 9 }
     ],
   },
   {
@@ -124,7 +121,7 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     title: "Nguyệt Quang Thạch",
     color: "RED",
     items: [
-       {id: 50112003, label: "Nguyệt Quang Thạch (Cấp 1)", img: "Gem1_1_13", startIndex: 12 },
+        {id: 50112003, label: "Nguyệt Quang Thạch (Cấp 1)", img: "Gem1_1_13", startIndex: 12 },
         { id: 50212003, label: "Nguyệt Quang Thạch (Cấp 2)", img: "Gem1_1_13", startIndex: 12 },
 
         { id: 50312003, label: "Nguyệt Quang Thạch (Cấp 3)", img: "Gem3_1_13", startIndex: 12 },
@@ -144,7 +141,7 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     title: "Bích Tỷ",
     color: "GREEN",
     items: [
-      { id: 50112004, label: "Bích Tỷ (Cấp 1)", img: "Gem1_2_1", startIndex: 0 },
+        { id: 50112004, label: "Bích Tỷ (Cấp 1)", img: "Gem1_2_1", startIndex: 0 },
         { id: 50212004, label: "Bích Tỷ (Cấp 2)", img: "Gem1_2_1", startIndex: 0 },
         { id: 50312004, label: "Bích Tỷ (Cấp 3)", img: "Gem3_2_1", startIndex: 0 },
         { id: 50412004, label: "Bích Tỷ (Cấp 4)", img: "Gem3_2_1", startIndex: 0 },
@@ -162,14 +159,14 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     color: "YELLOW",
     items: [
       { id: 50101001, label: "Miêu Nhãn Thạch (Cấp 1)", img: "Gem1_2_4", startIndex: 3 },
-        { id: 50201001, label: "Miêu Nhãn Thạch (Cấp 2)", img: "Gem1_2_4", startIndex: 3 },
-        { id: 50301001, label: "Miêu Nhãn Thạch (Cấp 3)", img: "Gem3_2_4", startIndex: 3 },
-        { id: 50401001, label: "Miêu Nhãn Thạch (Cấp 4)", img: "Gem3_2_4", startIndex: 3 },
-        { id: 50501001, label: "Miêu Nhãn Thạch (Cấp 5)", img: "Gem3_2_4", startIndex: 3 },
-        { id: 50601001, label: "Miêu Nhãn Thạch (Cấp 6)", img: "Gem6_2_4", startIndex: 3 },
-        { id: 50701001, label: "Miêu Nhãn Thạch (Cấp 7)", img: "Gem6_2_4", startIndex: 3 },
-        { id: 50801001, label: "Miêu Nhãn Thạch (Cấp 8)", img: "Gem6_2_4", startIndex: 3 },
-        { id: 50901001, label: "Miêu Nhãn Thạch (Cấp 9)", img: "Gem9_2_4", startIndex: 3 }
+      { id: 50201001, label: "Miêu Nhãn Thạch (Cấp 2)", img: "Gem1_2_4", startIndex: 3 },
+      { id: 50301001, label: "Miêu Nhãn Thạch (Cấp 3)", img: "Gem3_2_4", startIndex: 3 },
+      { id: 50401001, label: "Miêu Nhãn Thạch (Cấp 4)", img: "Gem3_2_4", startIndex: 3 },
+      { id: 50501001, label: "Miêu Nhãn Thạch (Cấp 5)", img: "Gem3_2_4", startIndex: 3 },
+      { id: 50601001, label: "Miêu Nhãn Thạch (Cấp 6)", img: "Gem6_2_4", startIndex: 3 },
+      { id: 50701001, label: "Miêu Nhãn Thạch (Cấp 7)", img: "Gem6_2_4", startIndex: 3 },
+      { id: 50801001, label: "Miêu Nhãn Thạch (Cấp 8)", img: "Gem6_2_4", startIndex: 3 },
+      { id: 50901001, label: "Miêu Nhãn Thạch (Cấp 9)", img: "Gem9_2_4", startIndex: 3 }
     ],
   },
   {
@@ -179,14 +176,14 @@ export const GEM_LIST_BASIC:CategoryType[] = [
     color: "ORANGE",
     items: [
       { id: 50101002, label: "Hổ Nhãn Thạch (Cấp 1)", img: "Gem1_1_1", startIndex: 0 },
-        { id: 50201002, label: "Hổ Nhãn Thạch (Cấp 2)", img: "Gem1_1_1", startIndex: 0 },
-        { id: 50301002, label: "Hổ Nhãn Thạch (Cấp 3)", img: "Gem3_1_1", startIndex: 0 },
-        { id: 50401002, label: "Hổ Nhãn Thạch (Cấp 4)", img: "Gem3_1_1", startIndex: 0 },
-        { id: 50501002, label: "Hổ Nhãn Thạch (Cấp 5)", img: "Gem3_1_1", startIndex: 0 },
-        { id: 50601002, label: "Hổ Nhãn Thạch (Cấp 6)", img: "Gem6_1_1", startIndex: 0 },
-        { id: 50701002, label: "Hổ Nhãn Thạch (Cấp 7)", img: "Gem6_1_1", startIndex: 0 },
-        { id: 50801002, label: "Hổ Nhãn Thạch (Cấp 8)", img: "Gem6_1_1", startIndex: 0 },
-        { id: 50901002, label: "Hổ Nhãn Thạch (Cấp 9)", img: "Gem9_1_1", startIndex: 0 }
+      { id: 50201002, label: "Hổ Nhãn Thạch (Cấp 2)", img: "Gem1_1_1", startIndex: 0 },
+      { id: 50301002, label: "Hổ Nhãn Thạch (Cấp 3)", img: "Gem3_1_1", startIndex: 0 },
+      { id: 50401002, label: "Hổ Nhãn Thạch (Cấp 4)", img: "Gem3_1_1", startIndex: 0 },
+      { id: 50501002, label: "Hổ Nhãn Thạch (Cấp 5)", img: "Gem3_1_1", startIndex: 0 },
+      { id: 50601002, label: "Hổ Nhãn Thạch (Cấp 6)", img: "Gem6_1_1", startIndex: 0 },
+      { id: 50701002, label: "Hổ Nhãn Thạch (Cấp 7)", img: "Gem6_1_1", startIndex: 0 },
+      { id: 50801002, label: "Hổ Nhãn Thạch (Cấp 8)", img: "Gem6_1_1", startIndex: 0 },
+      { id: 50901002, label: "Hổ Nhãn Thạch (Cấp 9)", img: "Gem9_1_1", startIndex: 0 }
     ],
   },
   {

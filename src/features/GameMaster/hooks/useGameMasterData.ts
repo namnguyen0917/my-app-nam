@@ -46,6 +46,31 @@ export default function useGameMasterData() {
         setData( HUMAN_LIST_SKILL );
           break;
 
+      case "fullList6x":
+        const { FULL_LIST_6x } = await import("@/mocks/GameMaster/fullList6x");
+        setData( FULL_LIST_6x );
+          break;
+
+      case "fullList7x":
+        const { FULL_LIST_7x } = await import("@/mocks/GameMaster/fullList7x");
+        setData( FULL_LIST_7x );
+          break;
+
+      case "fullList8x":
+        const { FULL_LIST_8x } = await import("@/mocks/GameMaster/fullList8x");
+        setData( FULL_LIST_8x );
+          break;
+
+      case "fullList9x":
+        const { FULL_LIST_9x } = await import("@/mocks/GameMaster/fullList9x");
+        setData( FULL_LIST_9x );
+          break;
+
+      case "fullList10x":
+        const { FULL_LIST_10x } = await import("@/mocks/GameMaster/fullList10x");
+        setData( FULL_LIST_10x );
+          break;
+
       default:
         const { GEM_LIST_TRAC } = await import("@/mocks/GameMaster/gemListTrac");
         setData(GEM_LIST_TRAC);
