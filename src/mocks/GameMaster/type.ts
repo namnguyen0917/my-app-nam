@@ -1,4 +1,6 @@
-export type GmTabKey = "gem" | "gemListTrac" | "gemListTinhHoa" | "petListSkill" | "humanListSkill";
+export type GmTabKey = 
+  "gem" | "gemListTrac" | "gemListTinhHoa" | "petListSkill" | "humanListSkill" |
+  "fullList6x" | "fullList7x" | "fullList8x" | "fullList9x" | "fullList10x"
 
 export type GmTabType = {
   key: GmTabKey;
