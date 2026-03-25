@@ -1,10 +1,10 @@
 'use client';
 
-import Page from "@/features/build/components/page";
+import BuildPage from "@/components/build/BuildPage";
 
 export default function Build() {
   
   return(
-    <Page />
+    <BuildPage />
   );
 }

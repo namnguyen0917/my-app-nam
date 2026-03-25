@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { menuData } from "@/mocks/shared/data";
+import { menuData } from "@/mocks/menu";
 
 export default function Header() {
   

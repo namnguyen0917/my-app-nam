@@ -1,10 +1,10 @@
 'use client';
 
-import Dashboard from "@/features/dashboard/components/Page";
+import DashBoardPage from "@/components/dashboard/DashBoardPage";
 
 export default function Home() {
   
   return(
-    <Dashboard />
+    <DashBoardPage />
   );
 }

@@ -1,6 +1,6 @@
 "use client";
-import { CategoryItemType } from "@/mocks/GameMaster"; 
-import GemIcon from "@/features/shared/components/page/GemIcon";
+import { CategoryItemType } from "@/mocks/game-master"; 
+import GemIcon from "@/components/shared/page/GemIcon";
 
 interface Props {
   data?: CategoryItemType[];

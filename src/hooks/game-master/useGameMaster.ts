@@ -1,11 +1,10 @@
 'use client';
 
 import { useState, useCallback } from "react";
-import { GEM_LIST_BASIC } from "@/mocks/GameMaster/gemList";
-import { gmDefaultTab, GmTabKey, CategoryType }  from "@/mocks/GameMaster/";
+import { GEM_LIST_BASIC } from "@/mocks/game-master/gemList";
+import { gmDefaultTab, GmTabKey, CategoryType }  from "@/mocks/game-master";
 
-
-export default function useGameMasterData() {
+export default function useGameMaster() {
 
   const [activeTab, setActiveTab] = useState(gmDefaultTab);
   const [openTabs, setOpenTabs] = useState<string[]>([]);
@@ -27,52 +26,52 @@ export default function useGameMasterData() {
   const loadData = useCallback(async (tab: GmTabKey) => {
     switch (tab) {
       case "gem":
-        const { GEM_LIST_BASIC } = await import("@/mocks/GameMaster/gemList");
+        const { GEM_LIST_BASIC } = await import("@/mocks/game-master/gemList");
         setData(GEM_LIST_BASIC);
           break;
 
       case "gemListTinhHoa":
-        const { GEM_LIST_TINH_HOA } = await import("@/mocks/GameMaster/gemListTinhHoa");
+        const { GEM_LIST_TINH_HOA } = await import("@/mocks/game-master/gemListTinhHoa");
         setData(GEM_LIST_TINH_HOA);
           break;
       
       case "petListSkill":
-        const { PET_LIST_SKILL } = await import("@/mocks/GameMaster/petListSkill");
+        const { PET_LIST_SKILL } = await import("@/mocks/game-master/petListSkill");
         setData(PET_LIST_SKILL);
           break;
 
       case "humanListSkill":
-        const { HUMAN_LIST_SKILL } = await import("@/mocks/GameMaster/humanListSkill");
+        const { HUMAN_LIST_SKILL } = await import("@/mocks/game-master/humanListSkill");
         setData( HUMAN_LIST_SKILL );
           break;
 
       case "fullList6x":
-        const { FULL_LIST_6x } = await import("@/mocks/GameMaster/fullList6x");
+        const { FULL_LIST_6x } = await import("@/mocks/game-master/fullList6x");
         setData( FULL_LIST_6x );
           break;
 
       case "fullList7x":
-        const { FULL_LIST_7x } = await import("@/mocks/GameMaster/fullList7x");
+        const { FULL_LIST_7x } = await import("@/mocks/game-master/fullList7x");
         setData( FULL_LIST_7x );
           break;
 
       case "fullList8x":
-        const { FULL_LIST_8x } = await import("@/mocks/GameMaster/fullList8x");
+        const { FULL_LIST_8x } = await import("@/mocks/game-master/fullList8x");
         setData( FULL_LIST_8x );
           break;
 
       case "fullList9x":
-        const { FULL_LIST_9x } = await import("@/mocks/GameMaster/fullList9x");
+        const { FULL_LIST_9x } = await import("@/mocks/game-master/fullList9x");
         setData( FULL_LIST_9x );
           break;
 
       case "fullList10x":
-        const { FULL_LIST_10x } = await import("@/mocks/GameMaster/fullList10x");
+        const { FULL_LIST_10x } = await import("@/mocks/game-master/fullList10x");
         setData( FULL_LIST_10x );
           break;
 
       default:
-        const { GEM_LIST_TRAC } = await import("@/mocks/GameMaster/gemListTrac");
+        const { GEM_LIST_TRAC } = await import("@/mocks/game-master/gemListTrac");
         setData(GEM_LIST_TRAC);
     }
 }, []);

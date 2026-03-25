@@ -1,7 +1,7 @@
 'use client';
 import { usePathname } from "next/navigation";
 
-const allowedPaths = ["/"];
+const allowedPaths = ["/","/build"];
 
 export default function useHideSidebar(): boolean {
   const pathname = usePathname();
