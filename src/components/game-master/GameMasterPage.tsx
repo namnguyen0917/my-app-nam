@@ -1,14 +1,14 @@
 "use client";
-import { CategoryType } from "@/mocks/GameMaster"; 
-import { Section } from "@features/shared/components";
-import useGameMasterData from "../hooks/useGameMasterData";
-import { gmListTabs, GmTabType } from "@/mocks/GameMaster";
-import ListItem from './ListItem';
-import { TEXT_COLOR, BG_COLOR, BG_HOVER_COLOR, BORDER_COLOR } from "@/libs/constants/";
+import { CategoryType } from "@/mocks/game-master"; 
+import { Section } from "@/components/shared";
+import useGameMaster from "../../hooks/game-master/useGameMaster";
+import { gmListTabs, GmTabType } from "@/mocks/game-master";
+import ListItem from "./ListItem";
+import { TEXT_COLOR, BG_COLOR, BG_HOVER_COLOR, BORDER_COLOR } from "@/constants/constants";
 
-export default function Page() {
+export default function GameMasterPage() {
  
-  const { activeTab, setActiveTab, openTabs, toggleTab, data, loadData, handleCopy, coppyId }  = useGameMasterData();
+  const { activeTab, setActiveTab, openTabs, toggleTab, data, loadData, handleCopy, coppyId }  = useGameMaster();
 
   return (
     <div className="flex flex-col glass p-6 rounded-2xl w-full space-y-6">

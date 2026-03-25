@@ -1,9 +1,9 @@
 'use client';
 import "../styles/globals.css";
-import { Header, Footer, Head } from "@/features/shared/components"; 
+import { Header, Footer, Head } from "@/components/shared"; 
 import { useTranslateStore } from '@/store/useTranslateStore';
-import { Sidebar } from "@/features/shared/components/";
-import useHideSidebar from "@/features/shared/hooks/useHideSidebar";
+import { Sidebar } from "@/components/shared";
+import useHideSidebar from "@/hooks/useHideSidebar";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function RootLayout({
