@@ -4,7 +4,6 @@ import { Section } from "@/components/shared";
 import useGameMaster from "../../hooks/game-master/useGameMaster";
 import { gmListTabs, GmTabType } from "@/mocks/game-master";
 import ListItem from "./ListItem";
-import { TEXT_COLOR, BG_COLOR, BG_HOVER_COLOR, BORDER_COLOR } from "@/constants/constants";
 
 export default function GameMasterPage() {
  
@@ -36,19 +35,20 @@ export default function GameMasterPage() {
         </div>
 
         {/* Toggle */}
-        {data.map((tab:CategoryType) => { 
+        {data.map((tab:CategoryType , index: number) => { 
 
           const isOpen = openTabs.includes(tab.id);
-          const textColor = TEXT_COLOR[tab.color as keyof typeof TEXT_COLOR] || 'text-white';
-          const bgColor = BG_COLOR[tab.color as keyof typeof BG_COLOR] || 'bg-amber-400';
-          const bgHoverColor = BG_HOVER_COLOR[tab.color as keyof typeof BG_HOVER_COLOR] || 'hover:bg-amber-400/20';
-          const borderColor = BORDER_COLOR[tab.color as keyof typeof BORDER_COLOR] || 'border-amber-400/30 bg-amber-100/30';
-          
+          const isEven = index % 2 === 0;
+
           return(
-            <div className={`border ${borderColor} rounded-xl overflow-hidden mb-[16px]`}  key={tab.id}>
+            <div className={`border 
+                  ${isEven ? "border-amber-400/30 bg-amber-100/30" : "border-sky-400/30 bg-sky-400/30"}
+                  rounded-xl overflow-hidden mb-[16px]`}  key={tab.id}>
               <button
                 onClick={() => toggleTab(tab.id)} 
-                className={`w-full flex items-center justify-between px-4 py-3 text-left ${textColor} text-lime-500 font-semibold ${bgColor} ${bgHoverColor} transition cursor-pointer`}
+                className={`w-full flex items-center justify-between px-4 py-3 text-left text-white text-lime-500 font-semibold 
+                  ${isEven ? "bg-amber-400/5 hover:bg-amber-400/20" : "bg-sky-400/10 hover:bg-sky-400/20"}
+                  transition cursor-pointer`}
               >
                 <span>{tab.name}</span>
                 <span className={`text-xl ${isOpen ? "text-amber-200" : "text-amber-400"}`}>
