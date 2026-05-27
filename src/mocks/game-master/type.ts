@@ -6,6 +6,7 @@ export type GmTabType = {
   key: GmTabKey;
   label: string;
   sort: number;
+  icon?: string;
 };
 
 export interface CategoryItemType {

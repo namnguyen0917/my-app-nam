@@ -2,20 +2,20 @@ import Link from "next/link";
 import { menuData } from "@/mocks/menu";
 
 export default function Header() {
-  
+
     return (
         <>
         {/* NAV */}
             <header className="w-full py-4 glass">
                 <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
                     {/* Logo */}
-                    <div className="flex items-center gap-4">
+                    <Link href="/" className="flex items-center gap-4 hover:opacity-80 transition">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-yellow-400 flex items-center justify-center text-neutral-900 font-bold">📜</div>
                         <div>
                             <div className="text-lg font-semibold">Tàng Kinh Các TLBB</div>
                             <div className="text-xs text-amber-200/60">Tổng quan, class, build, quest</div>
                         </div>
-                    </div>
+                    </Link>
                     {/* Desktop Menu */}
                     <nav className="hidden md:flex gap-6 text-sm">
                        {menuData.map((item) => (
@@ -54,3 +54,4 @@ export default function Header() {
         </>
     );
 }
+
