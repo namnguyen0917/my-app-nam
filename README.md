@@ -4,7 +4,7 @@
 
 Tàng Kinh Các là nền tảng trực tuyến cung cấp hướng dẫn chi tiết, build guides, và kho báu dữ liệu game cho tất cả game thủ TLBB từ cơ bản đến nâng cao.
 
-🌐 **Website:** [Tàng Kinh Các TLBB](https://tangkinh-cac.com)
+🌐 **Website:** [Tàng Kinh Các TLBB](https://tangkinhcactlbb.vercel.app/)
 
 ---
 
